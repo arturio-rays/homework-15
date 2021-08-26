@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+
+    &__holder {
+        display: none;
+
+        @include respond-to('laptop') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    color: $black;
+    font-family: $pacifico;
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+.main-nav {
+
+    &__list {
+        list-style: none;
+        margin: 0 -20px;
+    }
+
+    &__item {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    &__link {
+        color: $black;
+        font-family: $raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 10px 0;
+
+        &:hover {
+            border-top: 3px solid $orange;
+            transition: border .1s ease-in-out;
+            margin-top: -3px;
+        }
+    }
+}

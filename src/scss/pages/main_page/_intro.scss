@@ -1,0 +1,47 @@
+.intro {
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0 -15px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include respond-to('laptop') {
+            max-width: 364px;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        display: block;
+        color: $black;
+        font-family: $raleway;
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-bottom: 34px;
+    }
+
+    &__text-holder {
+        display: block;
+        color: $black;
+        font-family: $raleway;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        padding: 0 40px;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            padding: 0;
+        }
+    }
+}

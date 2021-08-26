@@ -1,0 +1,33 @@
+.about-us {
+    background-color: $aquamarine;
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -15px;
+    }
+
+    &__image {
+        width: 70%;
+    }
+
+    &__title {
+        color: $white;
+        font-family: $raleway;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__text-holder {
+        color: $white;
+        font-family: $raleway;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        padding: 0 40px;
+    }
+}
